@@ -19,9 +19,18 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
 }
 
 body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: var(--default-font);
   background-color: var(--cor4);
 }
@@ -161,10 +170,11 @@ main {
   padding: 50px;
   margin: 0 auto;
   background-color: var(--cor3);
-  min-width: 200px;
-  max-width: 900px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 1000px;
   box-shadow: 0px 0px 100px var(--cor0);
-
+  flex: 1;
 }
 
 main h2 {
