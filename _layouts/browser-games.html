@@ -18,6 +18,8 @@ title: Home
   <em>{{ game.date | date: "%d/%m/%Y" }}</em>
   </p>
 
+  <img src="{{ game.image }}" alt="Capa do Jogo: {{ game.title }}">
+
   <p>
   {{ game.description | strip_html }}
   </p>
