@@ -6,23 +6,23 @@ title: Home
 <h2>Últimas Postagens</h2>
 
 {% for post in site.posts %}
-  <article class="post-preview">
+<article class="post-preview">
 
-    <h3>
-      <a href="{{ post.url | relative_url }}" style="text-decoration:none;">
-        {{ post.title }}
-      </a>
-    </h3>
+  <h3>
+    <a href="{{ post.url | relative_url }}" style="text-decoration:none;">
+      {{ post.title }}
+    </a>
+  </h3>
 
-    <p class="meta">
-    <em>{{ post.date | date: "%d/%m/%Y" }}</em>
-    </p>
+  <p class="meta">
+  <em>{{ post.date | date: "%d/%m/%Y" }}</em>
+  </p>
 
-<p>
+  <p>
   {{ post.excerpt | strip_html }}
-</p>
+  </p>
 
-<a href="{{ post.url | relative_url }}">Leia mais...</a>
+  <a href="{{ post.url | relative_url }}">Leia mais...</a>
 
-  </article>
+</article>
 {% endfor %}

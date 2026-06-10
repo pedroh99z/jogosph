@@ -4,31 +4,31 @@ layout: default
 
 <article>
 
-<h2>{{ page.title }}</h2>
+  <h2>{{ page.title }}</h2>
 
-<p>
-{{ page.description }}
-</p>
+  <p>
+  {{ page.description }}
+  </p>
 
-<iframe style = "width: 100%; height: 550px; overflow: hidden; border: none;" src = "{{ page.embed }}" title="{{ page.title }}" scrolling = "no"></iframe>
+  <iframe style = "width: 100%; height: 550px; overflow: hidden; border: none;" src = "{{ page.embed }}" title="{{ page.title }}" scrolling = "no"></iframe>
 
-    {{ content }}
+  {{ content }}
 
 
 
-    <p>
-    Postado em {{ page.date | date: "%d/%m/%Y" }}.
-    </p>
-    
-{% if page.tags %}
+  <p>
+  Postado em {{ page.date | date: "%d/%m/%Y" }}.
+  </p>
 
-    <p>
-    Tags:
+  {% if page.tags %}
 
-    {% for tag in page.tags %}
-    <strong>{{ tag }}</strong>  
-    {% endfor %}
-    </p>
-{% endif %}
+  <p>
+  Tags:
+
+  {% for tag in page.tags %}
+  <strong>{{ tag }}</strong>  
+  {% endfor %}
+  </p>
+  {% endif %}
 
 </article>
