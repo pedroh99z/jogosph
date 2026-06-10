@@ -1,0 +1,28 @@
+---
+layout: default
+title: Home
+---
+
+<h2>Jogos de Navegador</h2>
+
+{% for game in site.games %}
+  <article class="post-preview">
+
+    <h3>
+      <a href="{{ game.url | relative_url }}" style="text-decoration:none;">
+        {{ game.title }}
+      </a>
+    </h3>
+
+    <p class="meta">
+    <em>{{ game.date | date: "%d/%m/%Y" }}</em>
+    </p>
+
+<p>
+  {{ game.excerpt | strip_html }}
+</p>
+
+<a href="{{ game.url | relative_url }}">Clique aqui para abrir!</a>
+
+  </article>
+{% endfor %}
