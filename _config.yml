@@ -30,6 +30,10 @@ url: "https://pedroh99z.github.io" # the base hostname & protocol for your site,
 github_username:  pedroh99z
 timezone: America/Sao_Paulo
 
+collections:
+  games:
+    output: true
+
 # Build settings
 theme: minima
 plugins:
