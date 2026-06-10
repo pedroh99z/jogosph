@@ -8,9 +8,23 @@ layout: default
 
 </article>
 
+<iframe style = "width: 100%; height: 550px; overflow: hidden; border: none;" src = "{{ page.embed }}" title="{{ page.title }}" scrolling = "no"></iframe>
+
     {{ content }}
 
     <p>
     Postado em {{ page.date | date: "%d/%m/%Y" }}.
     </p>
+    
+{% if page.tags %}
+
+    <p>
+    Tags: 
+
+    {% for tag in page.tags %}
+      {{ tag }}, 
+    {% endfor %}
+    </p>
+{% endif %}
+
 </article>
