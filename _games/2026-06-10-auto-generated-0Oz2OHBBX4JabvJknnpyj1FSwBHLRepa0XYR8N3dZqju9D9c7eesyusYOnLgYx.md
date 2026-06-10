@@ -8,3 +8,5 @@ description: Survival Craft é um jogo sandbox onde o jogador cria ferramentas c
 Não se esqueça de construir edifícios para você se abrigar.  Crie um ambiente onde você possa sobreviver sob as duras condições da natureza crua!
 date: 2026-06-10
 ---
+
+Teste
