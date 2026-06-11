@@ -34,6 +34,9 @@ collections:
   games:
     output: true
 
+plugins:
+  - jekyll-sitemap
+
 # Build settings
 theme: minima
 plugins:
