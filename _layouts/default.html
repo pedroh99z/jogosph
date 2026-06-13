@@ -6,6 +6,20 @@
     <title>{{ page.title }} - Jogosph</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" type="text/css" media="all">
     <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('a[href^="http"]').forEach(link => {
+    const isExternal = link.hostname !== window.location.hostname;
+
+    if (isExternal) {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+    }
+  });
+});
+</script>
+
   </head>
   <body>
 
