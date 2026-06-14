@@ -1,0 +1,5 @@
+```text
+User-agent: *
+Allow: /
+
+Sitemap: https://pedroh99z.github.io/jogosph/sitemap.xml
